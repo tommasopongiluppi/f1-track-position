@@ -40,6 +40,10 @@ ENDPOINTS = [
     "overtakes",
 ]
 
+# The columns that identify one car in one race, and one lap of that car.
+KEY = ["session_key", "driver_number"]
+LAP_KEY = KEY + ["lap_number"]
+
 
 def load_races():
     """Return the race index saved by stage 1 (one row per race)."""
@@ -63,3 +67,31 @@ def load_raw(endpoint, columns=None, number_columns=(), date_columns=()):
             table[column] = pd.to_datetime(table[column], format="ISO8601", utc=True)
         tables.append(table)
     return pd.concat(tables, ignore_index=True)
+
+
+def add_step(cleaning_steps, step, laps_before, laps_affected, action, reason):
+    """Add one row to the cleaning table (a list with one dictionary per step)."""
+    cleaning_steps.append(
+        {"step": step, "laps_before": int(laps_before), "laps_affected": int(laps_affected),
+         "action": action, "reason": reason}
+    )
+
+
+def scheduled_start_times(races):
+    """Return the scheduled start time of every race, indexed by session_key."""
+    return pd.to_datetime(races.set_index("session_key")["date"], format="ISO8601", utc=True)
+
+
+def find_red_flags(race_control):
+    """Return one row per red-flag period: from SESSION ABORTED to the next SESSION STARTED."""
+    status = race_control[race_control["category"] == "SessionStatus"].sort_values(["session_key", "date"])
+    periods = []
+    for session_key, messages in status.groupby("session_key"):
+        aborted_at = None
+        for message in messages.itertuples():
+            if message.message == "SESSION ABORTED":
+                aborted_at = message.date
+            elif message.message == "SESSION STARTED" and aborted_at is not None:
+                periods.append({"session_key": session_key, "red_start": aborted_at, "red_end": message.date})
+                aborted_at = None
+    return pd.DataFrame(periods)

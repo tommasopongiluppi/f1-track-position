@@ -25,7 +25,7 @@ Everything is saved in `data/raw/` (about 50 MB):
 - `<year>/<session_key>_<endpoint>.parquet`: one file per race and endpoint. The ten endpoints are drivers, laps, stints, pit, intervals, position, race_control, weather, session_result and overtakes.
 - `download_log.csv`: one line per request (time in UTC, session_key, endpoint, rows, status).
 
-The raw files keep the values as OpenF1 delivers them. Dates stay as text, and columns that mix numbers and text (for example a gap of `12.3` or `+1 LAP`) are stored as text. The conversion happens in `code/02_clean.ipynb`.
+The raw files keep the values as OpenF1 delivers them. Dates stay as text, and columns that mix numbers and text (for example a gap of `12.3` or `+1 LAP`) are stored as text. The conversion happens in `code/02a_clean_laps.ipynb`.
 
 The 2026 Bahrain Grand Prix was held at Sepang in Malaysia (circuit `Kuala Lumpur`, session_key 11731), but its country field still says Bahrain. Circuits must therefore be identified by the circuit column, not by the country.
 

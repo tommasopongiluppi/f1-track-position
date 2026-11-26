@@ -21,7 +21,10 @@ TODO: confirm the Python version and the installation steps on Nuvolos.
 Run every step from the repository root, with the virtual environment active. Open the notebooks with `jupyter lab` and run all cells from top to bottom.
 
 1. `python code/01_get_data.py` downloads the raw data from the OpenF1 API (needs an internet connection). It can be stopped and started again at any time: tables that are already saved are skipped.
-2. `code/02_clean.ipynb` (TODO)
+2. The cleaning notebooks, in this order:
+   1. `code/02a_clean_laps.ipynb` builds one lap table and one pit-stop table from the raw files.
+   2. `code/02b_race_situation.ipynb` adds the race situation of every lap (track status, weather, wet races), the pit loss of every race and the flags for clean laps and strategy stops.
+   3. `code/02c_positions.ipynb` (TODO)
 3. `code/03_tyre_model.ipynb` (TODO)
 4. `code/04_overtaking.ipynb` (TODO)
 5. `code/05_simulator.ipynb` (TODO)
@@ -35,7 +38,9 @@ Run every step from the repository root, with the virtual environment active. Op
 | Step | Time | Produces |
 |------|------|----------|
 | `01_get_data.py` | about 45 minutes the first time, a few seconds after that | raw data in `data/raw/` (about 50 MB): the race index `sessions.parquet`, ten tables per race in `data/raw/<year>/`, and `download_log.csv` |
-| `02_clean.ipynb` | TODO | TODO |
+| `02a_clean_laps.ipynb` | about 20 seconds | `laps_02a.parquet`, `stops_02a.parquet` and `cleaning_02a.csv` in `data/processed/`; `results/stint_change_exceptions.csv` |
+| `02b_race_situation.ipynb` | about 5 seconds | `laps_02b.parquet`, `stops_02b.parquet`, `races.parquet` and `cleaning_02b.csv` in `data/processed/`; `results/cleaning_table.csv` |
+| `02c_positions.ipynb` | TODO | TODO |
 | `03_tyre_model.ipynb` | TODO | TODO |
 | `04_overtaking.ipynb` | TODO | TODO |
 | `05_simulator.ipynb` | TODO | TODO |
