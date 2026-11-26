@@ -1,0 +1,88 @@
+year,circuit,session_key,driver_number,driver,stint_number,lap_start,lap_end,compound,tyre_age_at_start,same_set,reason,nearest_unmatched_stop_in_lap,first_uncertain_lap,last_uncertain_lap
+2023,Montreal,9110,22,TSU,3,3,70,HARD,0,False,no_stop_found,34.0,3,34
+2024,Spa-Francorchamps,9574,3,RIC,4,45,45,SOFT,0,False,no_stop_found,,45,45
+2024,Spa-Francorchamps,9574,14,ALO,3,45,45,MEDIUM,0,False,no_stop_found,,45,45
+2024,Spa-Francorchamps,9574,18,STR,3,45,45,MEDIUM,0,False,no_stop_found,,45,45
+2024,Spa-Francorchamps,9574,22,TSU,3,45,45,SOFT,0,False,no_stop_found,,45,45
+2024,Lusail,9655,31,OCO,2,2,2,MEDIUM,0,False,no_stop_found,,2,2
+2024,Lusail,9655,43,COL,2,2,2,MEDIUM,0,False,no_stop_found,,2,2
+2025,Melbourne,9693,5,BOR,4,3,4,INTERMEDIATE,3,False,no_stop_found,3.0,3,3
+2025,Melbourne,9693,5,BOR,6,4,44,MEDIUM,0,False,no_stop_found,3.0,4,3
+2025,Melbourne,9693,30,LAW,4,2,2,INTERMEDIATE,2,False,no_stop_found,3.0,2,3
+2025,Melbourne,9693,30,LAW,5,3,4,INTERMEDIATE,3,True,no_stop_found,3.0,3,3
+2025,Melbourne,9693,87,BEA,4,3,4,INTERMEDIATE,0,False,no_stop_found,3.0,3,3
+2025,Melbourne,9693,87,BEA,6,4,44,MEDIUM,0,False,no_stop_found,3.0,4,3
+2025,Las Vegas,9858,63,RUS,3,19,50,HARD,0,False,no_stop_found,,19,50
+2025,Spa-Francorchamps,9939,1,VER,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,4,NOR,2,2,13,HARD,0,False,no_stop_found,,2,13
+2025,Spa-Francorchamps,9939,5,BOR,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,6,HAD,2,2,13,MEDIUM,3,False,no_stop_found,20.0,2,20
+2025,Spa-Francorchamps,9939,10,GAS,2,2,11,MEDIUM,0,False,no_stop_found,,2,11
+2025,Spa-Francorchamps,9939,12,ANT,2,2,12,MEDIUM,0,False,no_stop_found,30.0,2,30
+2025,Spa-Francorchamps,9939,14,ALO,2,2,11,MEDIUM,0,False,no_stop_found,29.0,2,29
+2025,Spa-Francorchamps,9939,16,LEC,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,18,STR,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,22,TSU,2,2,13,MEDIUM,0,False,no_stop_found,,2,13
+2025,Spa-Francorchamps,9939,23,ALB,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,27,HUL,2,2,11,MEDIUM,0,False,no_stop_found,32.0,2,32
+2025,Spa-Francorchamps,9939,30,LAW,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,31,OCO,2,2,13,MEDIUM,7,False,no_stop_found,,2,13
+2025,Spa-Francorchamps,9939,43,COL,2,2,12,MEDIUM,0,False,no_stop_found,28.0,2,28
+2025,Spa-Francorchamps,9939,44,HAM,2,2,11,MEDIUM,0,False,no_stop_found,,2,11
+2025,Spa-Francorchamps,9939,55,SAI,2,2,12,MEDIUM,0,False,no_stop_found,26.0,2,26
+2025,Spa-Francorchamps,9939,63,RUS,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,81,PIA,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Spa-Francorchamps,9939,87,BEA,2,2,12,MEDIUM,0,False,no_stop_found,,2,12
+2025,Miami,10033,1,VER,2,33,57,HARD,0,False,no_stop_found,26.0,27,32
+2025,Miami,10033,4,NOR,2,33,57,HARD,0,False,no_stop_found,29.0,30,32
+2025,Miami,10033,5,BOR,2,24,30,HARD,0,False,no_stop_found,19.0,20,23
+2025,Miami,10033,6,HAD,2,24,57,HARD,0,False,no_stop_found,22.0,23,23
+2025,Miami,10033,12,ANT,2,33,57,HARD,0,False,no_stop_found,25.0,26,32
+2025,Miami,10033,14,ALO,2,33,56,MEDIUM,1,False,no_stop_found,28.0,29,32
+2025,Miami,10033,16,LEC,2,33,57,HARD,0,False,no_stop_found,29.0,30,32
+2025,Miami,10033,18,STR,2,24,56,HARD,1,False,no_stop_found,20.0,21,23
+2025,Miami,10033,22,TSU,2,33,57,HARD,0,False,no_stop_found,27.0,28,32
+2025,Miami,10033,23,ALB,2,33,57,HARD,0,False,no_stop_found,26.0,27,32
+2025,Miami,10033,30,LAW,2,32,36,MEDIUM,0,False,no_stop_found,28.0,29,31
+2025,Miami,10033,44,HAM,2,33,57,MEDIUM,0,False,no_stop_found,28.0,29,32
+2025,Miami,10033,55,SAI,2,33,57,HARD,0,False,no_stop_found,25.0,26,32
+2025,Miami,10033,63,RUS,2,33,57,MEDIUM,0,False,no_stop_found,29.0,30,32
+2025,Miami,10033,81,PIA,2,33,57,HARD,0,False,no_stop_found,29.0,30,32
+2026,Catalunya,11307,87,BEA,3,29,60,SOFT,0,False,no_stop_found,39.0,29,39
+2026,Spa-Francorchamps,11334,12,ANT,3,45,45,SOFT,3,False,no_stop_found,,45,45
+2026,Hungaroring,11342,11,PER,2,2,46,MEDIUM,0,False,no_stop_found,21.0,2,21
+2026,Singapore,11388,6,HAD,2,2,62,SOFT,0,False,no_stop_found,33.0,2,33
+2026,Singapore,11388,14,ALO,2,2,61,MEDIUM,0,False,no_stop_found,35.0,2,35
+2026,Singapore,11388,18,STR,2,2,36,MEDIUM,0,False,no_stop_found,26.0,2,26
+2026,Austin,11396,18,STR,2,2,41,SOFT,0,False,no_stop_found,15.0,2,15
+2026,Mexico City,11404,30,LAW,2,2,42,SOFT,3,False,no_stop_found,11.0,2,11
+2026,Mexico City,11404,50,HIR,2,2,43,SOFT,0,False,no_stop_found,35.0,2,35
+2026,Interlagos,11412,18,STR,2,10,30,SOFT,0,False,no_stop_found,16.0,10,16
+2026,Las Vegas,11420,30,LAW,2,2,50,SOFT,0,False,no_stop_found,17.0,2,17
+2026,Kuala Lumpur,11731,1,NOR,2,2,9,HARD,0,False,no_stop_found,34.0,2,34
+2026,Kuala Lumpur,11731,3,VER,2,2,2,SOFT,0,False,no_stop_found,33.0,2,33
+2026,Kuala Lumpur,11731,3,VER,3,3,9,SOFT,0,False,no_stop_found,33.0,3,33
+2026,Kuala Lumpur,11731,5,BOR,3,3,9,SOFT,2,False,no_stop_found,2.0,3,2
+2026,Kuala Lumpur,11731,6,HAD,2,2,9,SOFT,3,False,no_stop_found,31.0,2,31
+2026,Kuala Lumpur,11731,10,GAS,2,2,2,MEDIUM,0,False,no_stop_found,37.0,2,37
+2026,Kuala Lumpur,11731,10,GAS,3,3,9,HARD,0,False,no_stop_found,37.0,3,37
+2026,Kuala Lumpur,11731,11,PER,4,3,9,MEDIUM,0,False,no_stop_found,2.0,3,2
+2026,Kuala Lumpur,11731,14,ALO,2,2,2,HARD,0,False,no_stop_found,31.0,2,31
+2026,Kuala Lumpur,11731,14,ALO,3,3,9,HARD,0,False,no_stop_found,31.0,3,31
+2026,Kuala Lumpur,11731,16,LEC,2,2,3,INTERMEDIATE,0,False,no_stop_found,28.0,2,28
+2026,Kuala Lumpur,11731,18,STR,3,3,9,HARD,0,False,no_stop_found,2.0,3,2
+2026,Kuala Lumpur,11731,23,ALB,2,2,9,SOFT,0,False,no_stop_found,29.0,2,29
+2026,Kuala Lumpur,11731,27,HUL,3,3,8,SOFT,0,False,no_stop_found,2.0,3,2
+2026,Kuala Lumpur,11731,30,LAW,2,2,9,HARD,0,False,no_stop_found,30.0,2,30
+2026,Kuala Lumpur,11731,31,OCO,2,2,9,SOFT,0,False,no_stop_found,29.0,2,29
+2026,Kuala Lumpur,11731,41,LIN,2,2,9,HARD,0,False,no_stop_found,43.0,2,43
+2026,Kuala Lumpur,11731,43,COL,2,2,2,MEDIUM,0,False,no_stop_found,31.0,2,31
+2026,Kuala Lumpur,11731,43,COL,3,3,9,HARD,0,False,no_stop_found,31.0,3,31
+2026,Kuala Lumpur,11731,44,HAM,2,2,43,MEDIUM,3,False,no_stop_found,31.0,2,31
+2026,Kuala Lumpur,11731,55,SAI,2,2,9,SOFT,0,False,no_stop_found,42.0,2,42
+2026,Kuala Lumpur,11731,63,RUS,2,2,2,MEDIUM,0,False,no_stop_found,32.0,2,32
+2026,Kuala Lumpur,11731,63,RUS,3,3,9,SOFT,3,False,no_stop_found,32.0,3,32
+2026,Kuala Lumpur,11731,77,BOT,2,2,7,SOFT,0,False,no_stop_found,,2,7
+2026,Kuala Lumpur,11731,81,PIA,4,3,9,HARD,0,True,no_stop_found,2.0,3,2
+2026,Kuala Lumpur,11731,81,PIA,6,35,55,HARD,0,False,no_stop_found,33.0,34,34
+2026,Kuala Lumpur,11731,87,BEA,2,2,10,MEDIUM,0,False,no_stop_found,38.0,2,38

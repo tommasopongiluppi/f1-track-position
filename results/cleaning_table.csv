@@ -1,0 +1,20 @@
+step,laps_before,laps_affected,action,reason
+combine the raw lap files of all races,101988,0,none,starting point
+exact duplicate rows,101988,0,removed,the same row delivered twice
+empty rows after the chequered flag,101988,43,removed,row beyond the driver's classified laps with no lap or sector time; the car had finished
+empty rows of cars that did not start,101988,15,removed,lap row with no times for a driver classified as did not start
+retirement laps,101930,241,flagged incomplete_lap,the lap on which a car retired; it was started but not completed
+timed laps beyond the classified laps,101930,1,flagged beyond_classified,lap after the chequered flag; never a racing lap
+laps of disqualified drivers,101930,400,flagged disqualified,driver disqualified; the results give no number of laps
+laps without a lap time,101930,293,flagged no_lap_time,lap_duration missing at the source (mostly lap 1 and retirement laps)
+laps in races with laps missing at the source,101930,1508,flagged race_missing_laps > 0,OpenF1 has no rows for 453 completed laps in these races
+laps without a start time,101930,52,flagged date_start_missing,date_start missing at the source (lap 1 only); left empty
+lap end time disagrees with the lap time,101930,261,flagged time_mismatch,"next lap's start differs from date_start + lap_duration by more than 0.5 s, or is not later than date_start"
+laps during a red flag,101930,395,flagged red_flag_lap,"the lap overlaps a red-flag period, so its time includes the stoppage"
+stints covering no lap,101930,0,none,11 stints (a set fitted and removed without a completed lap) are assigned to no lap
+stint moved to the out-lap,101930,10239,flagged stint_shifted,584 stints started on the in-lap in the stints data (stop before the timing line)
+laps without a stint,101930,209,flagged tyre_flag = no_stint,no stint covers the lap (almost all are retirement laps); compound and tyre age empty
+laps with an unknown compound,101930,4,flagged tyre_flag = unknown_compound,the stints data says UNKNOWN; compound set to empty
+laps with an uncertain compound,101930,1130,flagged tyre_flag = compound_uncertain,87 stint changes on a lap without a stop; compound and tyre age kept as delivered
+in-laps,101930,3412,flagged is_in_lap,the lap that ends with a stop
+out-laps,101930,3414,flagged is_out_lap,the lap that follows a stop
