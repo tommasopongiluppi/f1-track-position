@@ -22,3 +22,18 @@ CUTOFF_DATE = "2026-11-23"
 
 # One seed for every random step, so results can be reproduced.
 RANDOM_SEED = 42
+
+# OpenF1 API (free, no login) and the tables downloaded for every race.
+API_URL = "https://api.openf1.org/v1"
+ENDPOINTS = [
+    "drivers",
+    "laps",
+    "stints",
+    "pit",
+    "intervals",
+    "position",
+    "race_control",
+    "weather",
+    "session_result",
+    "overtakes",
+]

@@ -20,10 +20,10 @@ TODO: confirm the Python version and the installation steps on Nuvolos.
 
 Run every step from the repository root, with the virtual environment active. Open the notebooks with `jupyter lab` and run all cells from top to bottom.
 
-1. `code/01_get_data.py` (TODO)
+1. `python code/01_get_data.py` downloads the raw data from the OpenF1 API (needs an internet connection). It can be stopped and started again at any time: tables that are already saved are skipped.
 2. `code/02_clean.ipynb` (TODO)
-3. `code/03_overtaking.ipynb` (TODO)
-4. `code/04_tyre_model.ipynb` (TODO)
+3. `code/03_tyre_model.ipynb` (TODO)
+4. `code/04_overtaking.ipynb` (TODO)
 5. `code/05_simulator.ipynb` (TODO)
 6. `code/06_tests.ipynb` (TODO)
 7. `code/07_figures.ipynb` (TODO)
@@ -34,10 +34,10 @@ Run every step from the repository root, with the virtual environment active. Op
 
 | Step | Time | Produces |
 |------|------|----------|
-| `01_get_data.py` | TODO | raw data in `data/raw/` |
+| `01_get_data.py` | about 45 minutes the first time, a few seconds after that | raw data in `data/raw/` (about 50 MB): the race index `sessions.parquet`, ten tables per race in `data/raw/<year>/`, and `download_log.csv` |
 | `02_clean.ipynb` | TODO | TODO |
-| `03_overtaking.ipynb` | TODO | TODO |
-| `04_tyre_model.ipynb` | TODO | TODO |
+| `03_tyre_model.ipynb` | TODO | TODO |
+| `04_overtaking.ipynb` | TODO | TODO |
 | `05_simulator.ipynb` | TODO | TODO |
 | `06_tests.ipynb` | TODO | TODO |
 | `07_figures.ipynb` | TODO | figures in `figures/`, tables in `results/` |
