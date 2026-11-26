@@ -18,3 +18,11 @@ laps with an unknown compound,101930,4,flagged tyre_flag = unknown_compound,the 
 laps with an uncertain compound,101930,1130,flagged tyre_flag = compound_uncertain,87 stint changes on a lap without a stop; compound and tyre age kept as delivered
 in-laps,101930,3412,flagged is_in_lap,the lap that ends with a stop
 out-laps,101930,3414,flagged is_out_lap,the lap that follows a stop
+laps under a safety car,101930,4712,flagged track_status = safety_car,any part of the car's lap overlaps one of the 61 safety-car periods
+laps under a virtual safety car,101930,2049,flagged track_status = vsc,any part of the car's lap overlaps one of the 57 VSC periods
+restart laps,101930,1061,flagged restart_lap,first green lap of a car directly after a safety-car or red-flag lap
+laps without weather,101930,19,weather left empty,"the lap has no start and no end time, so no nearest weather record"
+laps in wet races,101930,12651,flagged wet_race,11 races in which a car used intermediate or wet tyres
+"pit stops that are not strategy stops (counts are stops, not laps)",3418,1545,flagged strategy_stop = False,"red flag, no tyre change, uncertain compound, wet race, in-lap not green, lap 1, first two laps after a red flag, retirement or slow stop; first reason in not_strategy_reason"
+laps that are not clean for the pace model,101930,15979,flagged clean_lap = False,"lap 1, no lap time, red flag, safety car, VSC, restart, in-lap, out-lap, no or uncertain compound, or outlier; first reason in not_clean_reason"
+of which outliers,101930,561,flagged not_clean_reason = outlier,slower than 1.07 times the driver's median lap in the same stint
