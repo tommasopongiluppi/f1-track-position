@@ -1,0 +1,15 @@
+# Python and Jupyter caches
+__pycache__/
+.ipynb_checkpoints/
+
+# Virtual environment
+.venv/
+
+# Operating system and editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Data is downloaded, not committed (see data/README.md)
+data/*
+!data/README.md
