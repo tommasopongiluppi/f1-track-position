@@ -24,7 +24,7 @@ Run every step from the repository root, with the virtual environment active. Op
 2. The cleaning notebooks, in this order:
    1. `code/02a_clean_laps.ipynb` builds one lap table and one pit-stop table from the raw files.
    2. `code/02b_race_situation.ipynb` adds the race situation of every lap (track status, weather, wet races), the pit loss of every race and the flags for clean laps and strategy stops.
-   3. `code/02c_positions.ipynb` (TODO)
+   3. `code/02c_positions.ipynb` adds the race position and the gaps at the end of every lap, marks laps in traffic, builds the table of on-track overtakes, marks for every pit stop whether a rival was close, and checks the positions against OpenF1's own position data. It writes the final tables of this stage and the cleaning table.
 3. `code/03_tyre_model.ipynb` (TODO)
 4. `code/04_overtaking.ipynb` (TODO)
 5. `code/05_simulator.ipynb` (TODO)
@@ -39,8 +39,8 @@ Run every step from the repository root, with the virtual environment active. Op
 |------|------|----------|
 | `01_get_data.py` | about 45 minutes the first time, a few seconds after that | raw data in `data/raw/` (about 50 MB): the race index `sessions.parquet`, ten tables per race in `data/raw/<year>/`, and `download_log.csv` |
 | `02a_clean_laps.ipynb` | about 20 seconds | `laps_02a.parquet`, `stops_02a.parquet` and `cleaning_02a.csv` in `data/processed/`; `results/stint_change_exceptions.csv` |
-| `02b_race_situation.ipynb` | about 5 seconds | `laps_02b.parquet`, `stops_02b.parquet`, `races.parquet` and `cleaning_02b.csv` in `data/processed/`; `results/cleaning_table.csv` |
-| `02c_positions.ipynb` | TODO | TODO |
+| `02b_race_situation.ipynb` | about 5 seconds | `laps_02b.parquet`, `stops_02b.parquet`, `races.parquet` and `cleaning_02b.csv` in `data/processed/` |
+| `02c_positions.ipynb` | about 15 seconds | `laps.parquet`, `pit_stops.parquet` and `overtakes.parquet` in `data/processed/`; `results/cleaning_table.csv` |
 | `03_tyre_model.ipynb` | TODO | TODO |
 | `04_overtaking.ipynb` | TODO | TODO |
 | `05_simulator.ipynb` | TODO | TODO |

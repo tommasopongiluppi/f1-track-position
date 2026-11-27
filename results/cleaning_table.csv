@@ -26,3 +26,13 @@ laps in wet races,101930,12651,flagged wet_race,11 races in which a car used int
 "pit stops that are not strategy stops (counts are stops, not laps)",3418,1545,flagged strategy_stop = False,"red flag, no tyre change, uncertain compound, wet race, in-lap not green, lap 1, first two laps after a red flag, retirement or slow stop; first reason in not_strategy_reason"
 laps that are not clean for the pace model,101930,15979,flagged clean_lap = False,"lap 1, no lap time, red flag, safety car, VSC, restart, in-lap, out-lap, no or uncertain compound, or outlier; first reason in not_clean_reason"
 of which outliers,101930,561,flagged not_clean_reason = outlier,slower than 1.07 times the driver's median lap in the same stint
+laps without a race position,101930,261,position and gaps left empty,no lap end time: retirement laps and lap 1 of 2025 Miami
+lap end time shared with another car,101930,120,flagged shared_lap_end,two cars with the same lap end time; order taken from date_start + lap_duration
+laps in traffic,101930,47464,flagged in_traffic,"the previous car across the line, on any lap, is less than 2.0 s ahead"
+of which clean laps,101930,38808,flagged in_traffic,clean laps that stage 3 leaves out of the pace model because of traffic
+laps in the restart period after a red flag,101930,554,flagged red_flag_restart,from the first green lap after a red flag up to the first lap after the last lap on which at least half the field is an outlier (laps behind the safety car and the restart)
+"position swaps that are not on-track overtakes (counts are swaps, not laps)",6469,3550,left out of the overtakes table,"swap with the car directly in front on an in-lap or out-lap, under a safety car, VSC or red flag, on a restart lap, in the restart period after a red flag, or with a time_mismatch; first reason counted"
+on-track overtakes on a slow defender (counts are overtakes),2919,114,flagged defender_slow,"the defender's lap is an outlier, the defender retires on the next lap, or the attacker was more than 3.0 s behind before the lap"
+on-track overtakes between teammates (counts are overtakes),2919,251,flagged teammates,attacker and defender drive for the same team
+"pit stops with a rival close (counts are stops, not laps)",3418,2149,flagged rival_close,the car directly ahead or behind at the end of the lap before the in-lap is within 3.0 s and not a teammate; side in rival_side
+pit stops without a position on the lap before (counts are stops),3418,119,flagged rival_side = unknown,"stop at the end of lap 1, or the lap before the in-lap has no lap end time"
