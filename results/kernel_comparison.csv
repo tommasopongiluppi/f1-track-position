@@ -1,0 +1,13 @@
+race,kernel,compounds,laps,log_marginal_likelihood,held_out_rmse
+2025 Sakhir (high wear),RBF + White,3,383,-239.679,0.425
+2025 Sakhir (high wear),Matern(1.5) + White,3,383,-239.533,0.41
+2025 Sakhir (high wear),RBF + DotProduct + White,3,383,-235.214,0.42
+2025 Monza (low wear),RBF + White,2,468,-595.584,0.3
+2025 Monza (low wear),Matern(1.5) + White,2,468,-596.285,0.3
+2025 Monza (low wear),RBF + DotProduct + White,2,468,-594.583,0.3
+2026 Hungaroring,RBF + White,3,752,-687.905,0.599
+2026 Hungaroring,Matern(1.5) + White,3,752,-687.523,0.611
+2026 Hungaroring,RBF + DotProduct + White,3,752,-682.193,0.57
+all three races,RBF + White,8,1603,-1523.168,0.487
+all three races,Matern(1.5) + White,8,1603,-1523.341,0.491
+all three races,RBF + DotProduct + White,8,1603,-1511.991,0.47
