@@ -20,7 +20,7 @@ TODO: confirm the Python version and the installation steps on Nuvolos.
 
 Run every step from the repository root, with the virtual environment active. Open the notebooks with `jupyter lab` and run all cells from top to bottom.
 
-1. `python code/01_get_data.py` downloads the raw data from the OpenF1 API (needs an internet connection). It can be stopped and started again at any time: tables that are already saved are skipped.
+1. `python code/01_get_data.py` downloads the raw data from the OpenF1 API (needs an internet connection). It can be stopped and started again at any time: tables that are already saved are skipped. OpenF1 refuses free requests while an F1 session is live (from 30 minutes before a session to 30 minutes after it); the script then stops with a message and can simply be run again after the session.
 2. The cleaning notebooks, in this order:
    1. `code/02a_clean_laps.ipynb` builds one lap table and one pit-stop table from the raw files.
    2. `code/02b_race_situation.ipynb` adds the race situation of every lap (track status, weather, wet races), the pit loss of every race and the flags for clean laps and strategy stops.

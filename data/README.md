@@ -12,7 +12,7 @@ Run this from the repository root, with an internet connection:
 python code/01_get_data.py
 ```
 
-It needs no login. The first run takes about 45 minutes, because the script waits 2 seconds between requests to stay inside the limits of the API (about 910 requests). The script can be stopped and started again: tables that are already saved are skipped, so a second run makes no requests and finishes in a few seconds.
+It needs no login. The first run takes about 45 minutes, because the script waits 2 seconds between requests to stay inside the limits of the API (about 910 requests). The script can be stopped and started again: tables that are already saved are skipped, so a second run makes no requests and finishes in a few seconds. OpenF1 refuses free requests while an F1 session is live (from 30 minutes before a session to 30 minutes after it): the script then stops with a message saying so, the tables already saved are kept, and it can be run again after the session.
 
 ## What is downloaded
 

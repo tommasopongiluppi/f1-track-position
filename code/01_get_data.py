@@ -45,6 +45,14 @@ def get_json(endpoint, params):
             # OpenF1 answers 404 "No results found" when it has no rows.
             if code == 404 and "No results found" in response.text:
                 return [], "empty"
+            # OpenF1 refuses free requests while an F1 session is live, so
+            # every further request would fail too: stop here.
+            if code == 401:
+                raise SystemExit(
+                    "OpenF1 answered HTTP 401: it refuses free requests while an F1 session is live "
+                    "(from 30 minutes before a session to 30 minutes after it). "
+                    "Run the script again after the session; the tables already saved are kept."
+                )
             status = f"error: HTTP {code}"
             if code != 429 and code < 500:
                 return [], status  # a retry would give the same answer
